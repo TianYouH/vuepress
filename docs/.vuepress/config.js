@@ -7,7 +7,9 @@ module.exports = {
       ],
       sidebar: {
           "/math/": [
-              ""
+              "",
+              "高数基础",
+              "高数高级"
           ]
       }
     }
