@@ -1,7 +1,7 @@
 module.exports = {
-  base: 'blogs/docs/.vuepress/dist',
+  base: '/blogs/docs/.vuepress/dist',
   title: '天幽的博客',
-  description: '我不是针对谁',
+  description: '你好',
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
