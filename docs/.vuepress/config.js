@@ -7,6 +7,7 @@ module.exports = {
         { text: 'Webpack', link: '/webpack/' },
         { text: 'Git', link: '/git/' },
       ],
+      sidebarDepth: 3,
       sidebar: {
           "/math/": [
               "",
@@ -14,7 +15,11 @@ module.exports = {
               "高数高级"
           ],
           "/webpack/": [
-              ""
+              "",
+              "搭建Webpack环境",
+              "使用Webpack的配置文件",
+              "Loader",
+              "Plugins",
           ],
           "/git/": [
               "",
