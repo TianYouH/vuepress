@@ -23,18 +23,21 @@ webpack是一个模块打包工具，可以使用它来管理项目中的模块�
 
   代码映射关系
 
-- HMR
+- [WebpackDevServer](https://webpack.docschina.org/configuration/dev-server/)
+
+  webpack-dev-server 可用于快速开发应用程序。
+
+- [HMR](https://webpack.docschina.org/guides/hot-module-replacement/)
+
+  模块热替换(hot module replacement 或 HMR)是 webpack 提供的最有用的功能之一。它允许在运行时更新所有类型的模块，而无需完全刷新。本页面重点介绍其实现，而 概念 页面提供了更多关于它的工作原理以及为什么它有用的细节。
 
 - Create React App
 
 - Caching
 
-
 - Vue Cli 3.0
 
 - Shimming
-
-- WebpackDevServer
 
 - TreeShaking
 
