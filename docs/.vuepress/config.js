@@ -20,6 +20,7 @@ module.exports = {
               "使用Webpack的配置文件",
               "Loader",
               "Plugins",
+              "CodeSplitting",
           ],
           "/git/": [
               "",
