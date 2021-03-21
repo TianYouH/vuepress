@@ -93,6 +93,33 @@ console.log(p1.getAttribute("data-name "));
 
 ## BOM
 
+1. navigator 和 screen
+
+```js
+// navigator
+const ua = navigator.userAgent;
+const isChrome = ua.index0f("Chrome");
+console.log(isChrome);
+
+// screen
+console.log(screen.width);
+console.log(screen.height);
+```
+
+2. location 和 history
+
+```js
+//location
+console.log(location.href);
+console.log(location.protocol); // 'http: ' 'https: '
+console.log(location.pathname); // '/learn/199'
+console.log(location.search);
+console.log(location.hash);
+// history
+history.back();
+history.forward();
+```
+
 ## 事件绑定
 
 ## ajax
