@@ -389,3 +389,4 @@ try...catch可捕获异常，代替了Promise的catch
 for ... in ( 以及forEach for )是常规的同步遍历
 for ... of 常用于异步的遍历
 ```
+
