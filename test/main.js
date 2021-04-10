@@ -1,9 +1,11 @@
-console.log('你好世界：')
+function Aaa(params) {
+  
+}
 
-setTimeout(() => {
+const a = new Aaa();
 
-  console.log('你好世界：3333')
+const b = Object.create(a)
 
-}, 5000);
+b.name = "huang"
 
-console.log('你好世界：2222')
+console.log(b);

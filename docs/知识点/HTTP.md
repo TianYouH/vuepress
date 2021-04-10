@@ -113,7 +113,7 @@ Response Headers中
 控制强制缓存的逻辑 例如Cache-Control: max-age=31536000（单位是秒)
 max-age 缓存时间
 no-cache 不用本地缓存
- no-store 不用本地缓存 并且 不做协议缓存(服务端缓存)
+no-store 不用本地缓存 并且 不做协议缓存(服务端缓存)
 private 只允许最终用户做缓存
 public  允许中间路由做缓存
 
