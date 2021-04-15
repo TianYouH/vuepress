@@ -6,6 +6,7 @@ module.exports = {
         { text: '数学', link: '/math/' },
         { text: 'Webpack', link: '/webpack/' },
         { text: 'Git', link: '/git/' },
+        { text: '知识点', link: '/knowledge/' },
       ],
       sidebarDepth: 3,
       sidebar: {
@@ -25,6 +26,20 @@ module.exports = {
           "/git/": [
               "",
               "Git-Commit-message和Change-log验证配置",
+          ],
+          "/knowledge/": [
+              "",
+              "CSS",
+              "HTML",
+              "HTTP",
+              "Javascript",
+              "linux命令",
+              "WebApi",
+              "安全",
+              "常用手写函数",
+              "初级高频面试题",
+              "性能优化",
+              "运行环境",
           ],
       }
     }
