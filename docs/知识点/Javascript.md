@@ -43,36 +43,7 @@ function fn() {}
 判断是否是引用类型（不可再细分)
 ```
 
-4. 深拷贝
-
-```js
-function deepClone(obj = {}) {
-  if (typeof obj !== "object" || obj == null) {
-    // obj是null ，或者不是对象和数组，直接返回
-    return obj;
-  }
-
-  // 初始化返回结果
-  let result;
-  if (obj instanceof Array) {
-    return [];
-  } else {
-    return {};
-  }
-
-  for (let key in obj) {
-    // 保证key 不是原型的属性
-    if (obj.hasOwnProperty(key)) {
-      // 递归调用!!!
-      result[key] = deepClone(obj[key]);
-    }
-  }
-  //返回结果
-  return result;
-}
-```
-
-5. 字符串拼接
+4. 字符串拼接
 
 ```js
 const a = 100 + 10; //110
@@ -157,56 +128,7 @@ xialuo instanceof Object // true
 如果找不到则自动去__proto__中查找
 ```
 
-4. 手写简易 jQuery 考虑插件和扩展性
-
-```js
-class jQuery {
-  constructor(selector) {
-    const result = document.querySelectorAll(selector);
-    const length = result.length;
-    for (let i = 0; i < length; i++) {
-      this[i] = result[i];
-    }
-    this.length = length;
-    this.selector = selector;
-  }
-  get(index) {
-    return this[index];
-  }
-  each(fn) {
-    for (let i = 0; i < this.length; i++) {
-      const elem = this[i];
-      fn(elem);
-    }
-  }
-  on(type, fn) {
-    return this.each((elem) => {
-      elem.addEventListener(type, fn, false);
-    });
-  }
-  // 扩展很多 DOM API
-}
-
-// 插件
-jQuery.prototype.dialog = function (info) {
-  alert(info);
-};
-
-// “造轮子”
-class myJQuery extends jQuery {
-  constructor(selector) {
-    super(selector);
-  }
-  // 扩展自己的方法
-  addClass(className) {}
-  style(data) {}
-}
-
-// const $p = new jQuery('p')
-// $p.get(1)
-// $p.each((elem) => console.log(elem.nodeName))
-// $p.on('click', () => alert('clicked'))
-```
+4. 手写简易 jQuery 考虑插件和扩展性（常用手写函数209row）
 
 ## 作用域和闭包
 
@@ -259,24 +181,7 @@ this的不同应用场景，如何取值：
 箭头函数              取值是取上级作用域的this.
 ```
 
-5. 手写 bind 函数
-
-```js
-Function.prototype.band1 = function () {
-  // 将参数拆解为数组
-  const args = Array.prototype.slice.call(arguments);
-
-  // 获取 this (数组第一项)
-  const t = args.shift();
-
-  // fn1.bind(...) 中的 fn1
-  const self = this;
-
-  return function () {
-    return self.apply(t, args);
-  };
-};
-```
+5. 手写 bind 函数（常用手写函数190row）
 
 6. 实际开发中闭包的应用
 
