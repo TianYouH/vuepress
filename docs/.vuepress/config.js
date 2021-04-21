@@ -4,6 +4,7 @@ module.exports = {
     description: '这是我的博客',
     themeConfig: {
       nav: [
+        { text: 'CSS', link: '/css/' },
         { text: '数学', link: '/math/' },
         { text: 'Webpack', link: '/webpack/' },
         { text: 'Git', link: '/git/' },
@@ -11,6 +12,14 @@ module.exports = {
       ],
       sidebarDepth: 3,
       sidebar: {
+          "/css/": [
+              "",
+              "布局",
+              "定位",
+              "图文样式",
+              "移动端响应式",
+              "动画渐变",
+          ],
           "/math/": [
               "",
               "高数基础",
