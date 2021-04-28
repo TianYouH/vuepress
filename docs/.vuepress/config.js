@@ -5,9 +5,8 @@ module.exports = {
     themeConfig: {
       nav: [
         { text: 'CSS', link: '/css/' },
-        { text: '数学', link: '/math/' },
         { text: 'Webpack', link: '/webpack/' },
-        { text: 'Git', link: '/git/' },
+        { text: 'GIT', link: '/git/' },
         { text: '知识点', link: '/knowledge/' },
       ],
       sidebarDepth: 3,
@@ -19,11 +18,6 @@ module.exports = {
               "图文样式",
               "移动端响应式",
               "动画渐变",
-          ],
-          "/math/": [
-              "",
-              "高数基础",
-              "高数高级"
           ],
           "/webpack/": [
               "",
