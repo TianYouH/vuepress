@@ -1,6 +1,12 @@
 module.exports = {
     base: '/blogs/',
     title: '你好世界',
+    head: [
+        [
+            "link",
+            { rel: 'icon', href: '/favicon.ico' }
+        ]
+    ],
     description: '这是我的博客',
     themeConfig: {
       nav: [
