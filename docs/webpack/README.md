@@ -31,11 +31,11 @@ webpack 是一个模块打包工具，可以使用它来管理项目中的模块
 
   模块热替换(hot module replacement 或 HMR)是 webpack 提供的最有用的功能之一。它允许在运行时更新所有类型的模块，而无需完全刷新。本页面重点介绍其实现，而 概念 页面提供了更多关于它的工作原理以及为什么它有用的细节。
 
+- [CodeSplitting](https://webpack.docschina.org/guides/code-splitting/) 代码分离
+
 - [TreeShaking](https://webpack.docschina.org/guides/tree-shaking/) 用来去掉没有引用的内容，只支持 EsModule 的引入方式
 
       配置方式：mode 为 development 时是默认不带 tree shaking 的通过添加 optimization:{usedExports: true}的配置项来加上，同时需要在 package.json 里添加"sideEffects":false 的配置项，sideEffects 的值还可以为数组，表示不需要被 tree shaking 掉的内容，比如 css，并没有导出任何内容，可能就会被 tree shaking 掉出现问题，这时可以设置为["*.css"]
-
-- [CodeSplitting](https://webpack.docschina.org/guides/code-splitting/) 代码分离
 
 - [打包分析](https://webpack.docschina.org/guides/code-splitting/#bundle-analysis)
 
