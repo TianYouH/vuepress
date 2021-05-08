@@ -10,6 +10,7 @@ module.exports = {
     description: '这是我的博客',
     themeConfig: {
       nav: [
+        { text: 'HTML', link: '/html/' },
         { text: 'CSS', link: '/css/' },
         { text: 'Webpack', link: '/webpack/' },
         { text: 'GIT', link: '/git/' },
@@ -17,6 +18,9 @@ module.exports = {
       ],
       sidebarDepth: 3,
       sidebar: {
+          "/html/": [
+              ""
+          ],
           "/css/": [
               "",
               "布局",
