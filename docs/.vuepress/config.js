@@ -11,6 +11,7 @@ module.exports = {
     themeConfig: {
       nav: [
         { text: 'HTML', link: '/html/' },
+        { text: 'Javascript', link: '/javascript/' },
         { text: 'CSS', link: '/css/' },
         { text: 'Webpack', link: '/webpack/' },
         { text: 'GIT', link: '/git/' },
@@ -19,6 +20,9 @@ module.exports = {
       sidebarDepth: 3,
       sidebar: {
           "/html/": [
+              ""
+          ],
+          "/javascript/": [
               ""
           ],
           "/css/": [
