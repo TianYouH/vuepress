@@ -1,4 +1,4 @@
-# Webpack的配置文件
+# 使用Webpack的配置文件
 
 1. webpack的配置文件：webpack.config.js。
     - entry：指定入口文件;
