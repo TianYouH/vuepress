@@ -81,7 +81,7 @@ console.log("" || "abc"); // 'abc'
 console.log(!window.abc); // true
 ```
 
-## 原型和原型
+## 原型和原型链
 
 1. class
 
@@ -125,6 +125,8 @@ xialuo instanceof Object // true
 先在自身属性和方法寻找
 如果找不到则自动去__proto__中查找
 ```
+
+![图例](/image/javascript/原型链.jpg)
 
 4. 手写简易 jQuery 考虑插件和扩展性（常用手写函数209row）
 
