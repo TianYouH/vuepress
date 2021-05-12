@@ -128,7 +128,7 @@ xialuo instanceof Object // true
 
 ![图例](/image/javascript/原型链.jpg)
 
-4. 手写简易 jQuery 考虑插件和扩展性（常用手写函数209row）
+4. 手写简易 jQuery 考虑插件和扩展性（知识点-常用手写函数209row）
 
 ## 作用域和闭包
 
