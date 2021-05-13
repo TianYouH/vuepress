@@ -13,8 +13,11 @@ module.exports = {
         { text: 'HTML', link: '/html/' },
         { text: 'Javascript', link: '/javascript/' },
         { text: 'CSS', link: '/css/' },
+        { text: 'WebApi', link: '/webapi/' },
+        { text: 'HTTP', link: '/http/' },
         { text: 'Webpack', link: '/webpack/' },
         { text: 'GIT', link: '/git/' },
+        { text: 'Linux', link: '/linux/' },
         { text: '知识点', link: '/knowledge/' },
       ],
       sidebarDepth: 3,
@@ -33,6 +36,12 @@ module.exports = {
               "移动端响应式",
               "动画渐变",
           ],
+          "/webapi/": [
+              ""
+          ],
+          "/http/": [
+              ""
+          ],
           "/webpack/": [
               "",
               "搭建Webpack环境",
@@ -45,13 +54,11 @@ module.exports = {
               "",
               "Git-Commit-message和Change-log验证配置",
           ],
+          "/linux/": [
+              ""
+          ],
           "/knowledge/": [
               "",
-              "HTML",
-              "HTTP",
-              "Javascript",
-              "linux命令",
-              "WebApi",
               "安全",
               "常用手写函数",
               "初级高频面试题",

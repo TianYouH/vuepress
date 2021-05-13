@@ -83,6 +83,8 @@ console.log(!window.abc); // true
 
 ## 原型和原型链
 
+[测试地址](https://tianyouh.github.io/summarize/Javascript/1/)
+
 1. class
 
 ```text
@@ -128,7 +130,7 @@ xialuo instanceof Object // true
 
 ![图例](/image/javascript/原型链.jpg)
 
-4. 手写简易 jQuery 考虑插件和扩展性（知识点-常用手写函数209row）
+4. 手写简易 jQuery 考虑插件和扩展性 [链接](/knowledge/常用手写函数.html#bind-手写)
 
 ## 作用域和闭包
 
@@ -181,7 +183,7 @@ this的不同应用场景，如何取值：
 箭头函数              取值是取上级作用域的this.
 ```
 
-5. 手写 bind 函数（常用手写函数190row）
+5. 手写 bind 函数 [链接](/knowledge/常用手写函数.html#bind-手写)
 
 6. 实际开发中闭包的应用
 
