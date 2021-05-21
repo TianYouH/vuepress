@@ -18,6 +18,7 @@ module.exports = {
                 { text: 'CSS', link: '/css/' },
                 { text: 'WebApi', link: '/webapi/' },
                 { text: 'Webpack', link: '/webpack/' },
+                { text: '设计模式', link: '/designMode/' },
                 { text: '知识点', link: '/knowledge/' },
             ]
         },
@@ -33,30 +34,35 @@ module.exports = {
       ],
       sidebarDepth: 3,
       sidebar: {
-          "/html/": [
-              ""
-          ],
-          "/javascript/": [
-              ""
-          ],
-          "/css/": [
-              "",
-              "布局",
-              "定位",
-              "图文样式",
-              "移动端响应式",
-              "动画渐变",
-          ],
-          "/webapi/": [
-              ""
-          ],
-          "/webpack/": [
+        "/html/": [
+            ""
+        ],
+        "/javascript/": [
+            ""
+        ],
+        "/css/": [
+            "",
+            "布局",
+            "定位",
+            "图文样式",
+            "移动端响应式",
+            "动画渐变",
+        ],
+        "/webapi/": [
+            ""
+        ],
+        "/webpack/": [
             "",
             "搭建Webpack环境",
             "使用Webpack的配置文件",
             "Loader",
             "Plugins",
             "CodeSplitting",
+        ],
+        "/designMode/": [
+            "",
+            "面向对象",
+            "设计原则"
         ],
         "/knowledge/": [
             "",
