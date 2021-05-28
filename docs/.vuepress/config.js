@@ -62,7 +62,8 @@ module.exports = {
         "/designMode/": [
             "",
             "面向对象",
-            "设计原则"
+            "设计原则",
+            "UML类图",
         ],
         "/knowledge/": [
             "",
