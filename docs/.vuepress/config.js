@@ -9,6 +9,7 @@ module.exports = {
     ],
     description: '这是我的博客',
     themeConfig: {
+      lastUpdated: '最后更新时间', // string | boolean
       nav: [
         {
             text: '前端',
@@ -67,7 +68,8 @@ module.exports = {
             "面试题分析",
             "工厂模式",
             "单例模式",
-            "适配器模式"
+            "适配器模式",
+            "装饰器模式"
         ],
         "/knowledge/": [
             "",
