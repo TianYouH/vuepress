@@ -19,8 +19,15 @@ module.exports = {
                 { text: 'CSS', link: '/css/' },
                 { text: 'WebApi', link: '/webapi/' },
                 { text: 'Webpack', link: '/webpack/' },
+                { text: 'React', link: '/react/' },
                 { text: '设计模式', link: '/designMode/' },
                 { text: '知识点', link: '/knowledge/' },
+            ]
+        },
+        {
+            text: '服务',
+            items: [
+                { text: 'Koa', link: '/koa/' }
             ]
         },
         {
@@ -52,6 +59,10 @@ module.exports = {
         "/webapi/": [
             ""
         ],
+        "/react/": [
+            "",
+            "环境构建"
+        ],
         "/webpack/": [
             "",
             "搭建Webpack环境",
@@ -79,11 +90,16 @@ module.exports = {
         ],
         "/knowledge/": [
             "",
+            "OAuth授权",
             "安全",
             "常用手写函数",
             "初级高频面试题",
             "性能优化",
             "运行环境",
+        ],
+
+        "/koa/": [
+            ""
         ],
 
         "/test/": [
