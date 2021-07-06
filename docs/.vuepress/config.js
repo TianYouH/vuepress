@@ -31,6 +31,12 @@ module.exports = {
             ]
         },
         {
+            text: '数据',
+            items: [
+                { text: 'Redis', link: '/redis/' }
+            ]
+        },
+        {
             text: '开发',
             items: [
                 { text: '测试', link: '/test/' },
@@ -99,6 +105,10 @@ module.exports = {
         ],
 
         "/koa/": [
+            ""
+        ],
+
+        "/redis/": [
             ""
         ],
 
