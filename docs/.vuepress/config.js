@@ -14,14 +14,15 @@ module.exports = {
         {
             text: '前端',
             items: [
-                { text: 'HTML', link: '/html/' },
-                { text: 'Javascript', link: '/javascript/' },
-                { text: 'CSS', link: '/css/' },
-                { text: 'WebApi', link: '/webapi/' },
-                { text: 'Webpack', link: '/webpack/' },
-                { text: 'React', link: '/react/' },
-                { text: '设计模式', link: '/designMode/' },
-                { text: '知识点', link: '/knowledge/' },
+                { text: 'HTML', link: '/web/html/' },
+                { text: 'Javascript', link: '/web/javascript/' },
+                { text: 'CSS', link: '/web/css/' },
+                { text: 'WebApi', link: '/web/webapi/' },
+                { text: 'Webpack', link: '/web/webpack/' },
+                { text: 'React', link: '/web/react/' },
+                { text: '设计模式', link: '/web/designMode/' },
+                { text: '知识点', link: '/web/knowledge/' },
+                { text: '面试题', link: '/web/issue/' },
             ]
         },
         {
@@ -48,13 +49,13 @@ module.exports = {
       ],
       sidebarDepth: 3,
       sidebar: {
-        "/html/": [
+        "/web/html/": [
             ""
         ],
-        "/javascript/": [
+        "/web/javascript/": [
             ""
         ],
-        "/css/": [
+        "/web/css/": [
             "",
             "布局",
             "定位",
@@ -62,14 +63,14 @@ module.exports = {
             "移动端响应式",
             "动画渐变",
         ],
-        "/webapi/": [
+        "/web/webapi/": [
             ""
         ],
-        "/react/": [
+        "/web/react/": [
             "",
             "环境构建"
         ],
-        "/webpack/": [
+        "/web/webpack/": [
             "",
             "搭建Webpack环境",
             "使用Webpack的配置文件",
@@ -77,7 +78,7 @@ module.exports = {
             "Plugins",
             "CodeSplitting",
         ],
-        "/designMode/": [
+        "/web/designMode/": [
             "",
             "面向对象",
             "UML类图",
@@ -94,7 +95,7 @@ module.exports = {
             "状态模式",
             "其它设计模式"
         ],
-        "/knowledge/": [
+        "/web/knowledge/": [
             "",
             "OAuth授权",
             "安全",
@@ -102,6 +103,9 @@ module.exports = {
             "初级高频面试题",
             "性能优化",
             "运行环境",
+        ],
+        "/web/issue/": [
+            ""
         ],
 
         "/koa/": [
