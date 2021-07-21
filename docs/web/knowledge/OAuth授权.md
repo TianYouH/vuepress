@@ -4,7 +4,7 @@
 
 流程图
 
-![示例-1](/blogs/image/knowledge/示例-1.png)
+![示例-1](/blogs/image/web/knowledge/示例-1.png)
 
 Oauth的实现流程
 

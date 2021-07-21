@@ -31,7 +31,7 @@ class People {
 }
 ```
 
-![示例-1](/blogs/image/designMode/示例-1.png)
+![示例-1](/blogs/image/web/designMode/示例-1.png)
 
 ## 关系
 
@@ -85,4 +85,4 @@ let b = new B('bbb')
 console.log(b) // b无房子
 ```
 
-![示例-2](/blogs/image/designMode/示例-2.png)
+![示例-2](/blogs/image/web/designMode/示例-2.png)

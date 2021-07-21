@@ -128,9 +128,9 @@ xialuo instanceof Object // true
 如果找不到则自动去__proto__中查找
 ```
 
-![图例](/blogs/image/javascript/原型链.jpg)
+![图例](/blogs/image/web/javascript/原型链.jpg)
 
-4. 手写简易 jQuery 考虑插件和扩展性 [链接](/knowledge/常用手写函数.html#bind-手写)
+4. 手写简易 jQuery 考虑插件和扩展性 [链接](/web/knowledge/常用手写函数.html#bind-手写)
 
 ## 作用域和闭包
 
@@ -183,7 +183,7 @@ this的不同应用场景，如何取值：
 箭头函数              取值是取上级作用域的this.
 ```
 
-5. 手写 bind 函数 [链接](/knowledge/常用手写函数.html#bind-手写)
+5. 手写 bind 函数 [链接](/web/knowledge/常用手写函数.html#bind-手写)
 
 6. 实际开发中闭包的应用
 
