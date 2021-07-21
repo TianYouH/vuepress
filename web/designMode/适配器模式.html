@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>适配器模式 | 你好世界</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/blogs/favicon.ico">
+    <meta name="description" content="这是我的博客">
+    <link rel="preload" href="/blogs/assets/css/0.styles.e18e9f23.css" as="style"><link rel="preload" href="/blogs/assets/js/app.899da232.js" as="script"><link rel="preload" href="/blogs/assets/js/2.c73eb779.js" as="script"><link rel="preload" href="/blogs/assets/js/32.05373c4a.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.8b7bb068.js"><link rel="prefetch" href="/blogs/assets/js/11.f7cbab53.js"><link rel="prefetch" href="/blogs/assets/js/12.71918856.js"><link rel="prefetch" href="/blogs/assets/js/13.3ed68190.js"><link rel="prefetch" href="/blogs/assets/js/14.03529f86.js"><link rel="prefetch" href="/blogs/assets/js/15.3053ffb2.js"><link rel="prefetch" href="/blogs/assets/js/16.8e07e3bf.js"><link rel="prefetch" href="/blogs/assets/js/17.33cd47d5.js"><link rel="prefetch" href="/blogs/assets/js/18.9502d3bf.js"><link rel="prefetch" href="/blogs/assets/js/19.29adb430.js"><link rel="prefetch" href="/blogs/assets/js/20.29ec0b81.js"><link rel="prefetch" href="/blogs/assets/js/21.17d4942f.js"><link rel="prefetch" href="/blogs/assets/js/22.f0fbb824.js"><link rel="prefetch" href="/blogs/assets/js/23.50122237.js"><link rel="prefetch" href="/blogs/assets/js/24.8abe6113.js"><link rel="prefetch" href="/blogs/assets/js/25.0921d403.js"><link rel="prefetch" href="/blogs/assets/js/26.8ab63296.js"><link rel="prefetch" href="/blogs/assets/js/27.3d90000f.js"><link rel="prefetch" href="/blogs/assets/js/28.5ec724ef.js"><link rel="prefetch" href="/blogs/assets/js/29.000895f9.js"><link rel="prefetch" href="/blogs/assets/js/3.c7ea1863.js"><link rel="prefetch" href="/blogs/assets/js/30.20b5fc97.js"><link rel="prefetch" href="/blogs/assets/js/31.0e3ad5a4.js"><link rel="prefetch" href="/blogs/assets/js/33.2e15565e.js"><link rel="prefetch" href="/blogs/assets/js/34.d30cdedb.js"><link rel="prefetch" href="/blogs/assets/js/35.eeb81f3f.js"><link rel="prefetch" href="/blogs/assets/js/36.e2c9d505.js"><link rel="prefetch" href="/blogs/assets/js/37.3e9ea5d7.js"><link rel="prefetch" href="/blogs/assets/js/38.609f184e.js"><link rel="prefetch" href="/blogs/assets/js/39.66306642.js"><link rel="prefetch" href="/blogs/assets/js/4.7d5f245c.js"><link rel="prefetch" href="/blogs/assets/js/40.906d0533.js"><link rel="prefetch" href="/blogs/assets/js/41.dc08ec12.js"><link rel="prefetch" href="/blogs/assets/js/42.c5da8351.js"><link rel="prefetch" href="/blogs/assets/js/43.a5915163.js"><link rel="prefetch" href="/blogs/assets/js/44.0122b917.js"><link rel="prefetch" href="/blogs/assets/js/45.1ba09b72.js"><link rel="prefetch" href="/blogs/assets/js/46.b38a2295.js"><link rel="prefetch" href="/blogs/assets/js/47.0349128a.js"><link rel="prefetch" href="/blogs/assets/js/48.d4a597db.js"><link rel="prefetch" href="/blogs/assets/js/49.d23bf49b.js"><link rel="prefetch" href="/blogs/assets/js/5.09c2869e.js"><link rel="prefetch" href="/blogs/assets/js/50.737542aa.js"><link rel="prefetch" href="/blogs/assets/js/51.b1a0569a.js"><link rel="prefetch" href="/blogs/assets/js/52.285a2a9a.js"><link rel="prefetch" href="/blogs/assets/js/53.3e1d5bee.js"><link rel="prefetch" href="/blogs/assets/js/54.c8e2f49c.js"><link rel="prefetch" href="/blogs/assets/js/55.8e391b31.js"><link rel="prefetch" href="/blogs/assets/js/56.31495123.js"><link rel="prefetch" href="/blogs/assets/js/57.e78db422.js"><link rel="prefetch" href="/blogs/assets/js/58.802d4b5c.js"><link rel="prefetch" href="/blogs/assets/js/59.92b8be69.js"><link rel="prefetch" href="/blogs/assets/js/6.a4873fcd.js"><link rel="prefetch" href="/blogs/assets/js/60.40738d0f.js"><link rel="prefetch" href="/blogs/assets/js/61.ce3cff27.js"><link rel="prefetch" href="/blogs/assets/js/62.6653dc4a.js"><link rel="prefetch" href="/blogs/assets/js/63.d4b87fe4.js"><link rel="prefetch" href="/blogs/assets/js/7.af43948c.js"><link rel="prefetch" href="/blogs/assets/js/8.fe42ff2a.js"><link rel="prefetch" href="/blogs/assets/js/9.3b7278a3.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.e18e9f23.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><!----> <span class="site-name">你好世界</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/web/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/webapi/" class="nav-link">
+  WebApi
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/designMode/" class="nav-link router-link-active">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/knowledge/" class="nav-link">
+  知识点
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/issue/" class="nav-link">
+  面试题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务" class="dropdown-title"><span class="title">服务</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/koa/" class="nav-link">
+  Koa
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据" class="dropdown-title"><span class="title">数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/redis/" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发" class="dropdown-title"><span class="title">开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/test/" class="nav-link">
+  测试
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/git/" class="nav-link">
+  GIT
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/http/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/linux/" class="nav-link">
+  Linux
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/web/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/webapi/" class="nav-link">
+  WebApi
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/designMode/" class="nav-link router-link-active">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/knowledge/" class="nav-link">
+  知识点
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/web/issue/" class="nav-link">
+  面试题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务" class="dropdown-title"><span class="title">服务</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/koa/" class="nav-link">
+  Koa
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据" class="dropdown-title"><span class="title">数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/redis/" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发" class="dropdown-title"><span class="title">开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/test/" class="nav-link">
+  测试
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/git/" class="nav-link">
+  GIT
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/http/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/linux/" class="nav-link">
+  Linux
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blogs/web/designMode/" aria-current="page" class="sidebar-link">设计模式</a></li><li><a href="/blogs/web/designMode/面向对象.html" class="sidebar-link">面向对象</a></li><li><a href="/blogs/web/designMode/UML类图.html" class="sidebar-link">UML 类图</a></li><li><a href="/blogs/web/designMode/设计原则.html" class="sidebar-link">设计原则</a></li><li><a href="/blogs/web/designMode/面试题分析.html" class="sidebar-link">面试题分析</a></li><li><a href="/blogs/web/designMode/工厂模式.html" class="sidebar-link">工厂模式</a></li><li><a href="/blogs/web/designMode/单例模式.html" class="sidebar-link">单例模式</a></li><li><a href="/blogs/web/designMode/适配器模式.html" class="active sidebar-link">适配器模式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/web/designMode/适配器模式.html#介绍" class="sidebar-link">介绍</a></li><li class="sidebar-sub-header"><a href="/blogs/web/designMode/适配器模式.html#示例" class="sidebar-link">示例</a></li><li class="sidebar-sub-header"><a href="/blogs/web/designMode/适配器模式.html#场景" class="sidebar-link">场景</a></li></ul></li><li><a href="/blogs/web/designMode/装饰器模式.html" class="sidebar-link">装饰器模式</a></li><li><a href="/blogs/web/designMode/代理模式.html" class="sidebar-link">代理模式</a></li><li><a href="/blogs/web/designMode/外观模式.html" class="sidebar-link">外观模式（网关？）</a></li><li><a href="/blogs/web/designMode/观察者模式.html" class="sidebar-link">观察者模式</a></li><li><a href="/blogs/web/designMode/迭代器模式.html" class="sidebar-link">迭代器模式</a></li><li><a href="/blogs/web/designMode/状态模式.html" class="sidebar-link">状态模式</a></li><li><a href="/blogs/web/designMode/其它设计模式.html" class="sidebar-link">其它设计模式</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="适配器模式"><a href="#适配器模式" class="header-anchor">#</a> 适配器模式</h1> <h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <ul><li>旧接口格式和使用者不兼容;</li> <li>中间加一个适配转换接口;</li></ul> <p>设计原则验证</p> <ul><li>将旧接口和使用者进行分离;</li> <li>符合开放封闭原则;</li></ul> <h2 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h2> <p><img src="/blogs/image/web/designMode/%E7%A4%BA%E4%BE%8B-6.png" alt="示例-6"></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Adaptee</span> <span class="token punctuation">{</span>
+  <span class="token function">specificRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token string">'德国标准的插头'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Target</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>adaptee <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Adaptee</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">let</span> info <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>adaptee<span class="token punctuation">.</span><span class="token function">specificRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>info<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> -&gt;转换器-&gt;中国标准的插头</span><span class="token template-punctuation string">`</span></span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//测试</span>
+<span class="token keyword">let</span> target <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Target</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+target<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="场景"><a href="#场景" class="header-anchor">#</a> 场景</h2> <ul><li>旧接口封装</li> <li>vue computed</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">7/21/2021, 4:59:10 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blogs/web/designMode/单例模式.html" class="prev">
+        单例模式
+      </a></span> <span class="next"><a href="/blogs/web/designMode/装饰器模式.html">
+        装饰器模式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blogs/assets/js/app.899da232.js" defer></script><script src="/blogs/assets/js/2.c73eb779.js" defer></script><script src="/blogs/assets/js/32.05373c4a.js" defer></script>
+  </body>
+</html>
